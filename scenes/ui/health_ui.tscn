@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgv2atk5gusnu"]
+
+[ext_resource type="Script" path="res://scenes/ui/health_ui.gd" id="1_adloa"]
+[ext_resource type="Texture2D" uid="uid://c3abbtmlr6vul" path="res://art/Lilheart.png" id="2_xwgqo"]
+
+[node name="HealthUI" type="HBoxContainer"]
+offset_right = 31.0
+offset_bottom = 6.0
+theme_override_constants/separation = 2
+script = ExtResource("1_adloa")
+
+[node name="HealthImage" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_xwgqo")
+stretch_mode = 5
+
+[node name="HealthLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "14"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MaxHealthLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "/35"
+vertical_alignment = 1
